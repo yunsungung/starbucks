@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sung buk dang</title>
+
+  <!--Open Graph-->
+  <!--http://ogp.me/-->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sung buk dang" />
+  <meta property="og:title" content="Sung buk dang" />
+  <meta property="og:url" content="https://sungbukdang.co.kr" />
+
+  <!--Twitter Card-->
+  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Sung buk dang" />
+  <meta property="twitter:title" content="Sung buk dang" />
+  <meta property="twitter:url" content="https://sungbukdang.co.kr" />
+
+  <!--파비콘-->
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="./css/common.css?v=1" />
+  <link rel="stylesheet" href="./css/main.css?v=1" />
+  <link rel="stylesheet" href="./css/animation.css?v=1" />
+
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+  <script defer src="./js/youtube.js"></script>
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/scroll.js"></script>
+
+  <style>
+    header{background-color: transparent; border-bottom:0; transition:.3s;}
+    header .main-menu .item .item__name{font-size:20px; color:#fff; font-weight:400;}
+    header .sub-menu ul.menu li a{color:#fff;}
+    header .sub-menu ul.menu li.line::before{background-color: #333;}
+    .visuals{margin-top:0;}
+  </style> 
+</head>
+<body>
+
+  <!--HEADER-->
+  <header>
+	<div class="header">
+		 <aside class="viewMenu" style="display: none;">
+			<a href="#" class="btnClose"><span class="material-icons">close</span></a>
+			<nav>
+				<span>
+					Menu
+				</span>
+				<ul>
+					<li><a href="./about.html">성북당 <span>complete</span></a></li>
+					<li><a href="./menu.html">메뉴 <span>complete</span></a></li>
+					<li><a href="./store.html">매장 <span>complete</span></a></li>
+					<li><a href="./franchisee.html">가맹안내 <span>complete</span></a></li>
+					<li><a href="">성북당소식</a></li>
+				</ul>
+			</nav>
+			<footer class="footer">
+				<span>Social</span>
+				<ul>
+					<li>
+						<a href="https://www.instagram.com/pantas_paladar/" rel="nofollow, noreferrer" target="_blank">
+							<figure>
+								<img src="http://sungbukdang.com/theme/basic/images/gold10_c_gnb_snsicon01.svg" title="">
+								<figcaption>
+									Instagram
+									<span>@sungbukdang</span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="https://web.whatsapp.com/" rel="nofollow, noreferrer" target="_blank">
+							<figure>
+								<img src="http://sungbukdang.com/theme/basic/images/gold10_c_gnb_snsicon02.svg" title="">
+								<figcaption>
+									Facebook
+									<span>성북당</span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		 </aside>
+		 <a href="#" class="btnMenu" style="">
+			<span class="material-icons">menu</span>
+		</a>
+	</div>
+    <div class="inner">
+
+      <a href="/" class="logo">
+        <img src="./images/gold10_c_gnb_logo.png" alt="STARBUCKS" />
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <!-- <li>
+            <a href="/signin">Sign In</a>
+          </li> -->
+          <li>
+            <a href="javascript:void(0)">성북당 SNS</a>
+          </li>
+          <!-- <li>
+            <a href="javascript:void(0)">Customer Service & Ideas</a>
+          </li> -->
+          <li>
+            <a href="javascript:void(0)">매장</a>
+          </li>
+          <li>
+            <a href="./enindex.html">En</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Ko</a>
+          </li>
+        </ul>
+        <!-- <div class="search">
+          <input type="text" />
+          <span class="material-icons">search</span>
+        </div> -->
+      </div>
+
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name" onclick="javascript:location.href='./about.html'">성북당</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>성북당에 관해</h4>
+                  <ul>
+                    <li>성북당 십원빵</li>
+                    <li>찾아오시는길</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>메뉴</h4>
+                  <ul>
+                    <li>성북당 커피</li>
+                    <li>신메뉴</li>
+                    <li>전체메뉴</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>매장</h4>
+                  <ul>
+                    <li>매장 찾기</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>가맹안내</h4>
+                  <ul>
+                    <li>가맹안내</li>
+                    <li>인테리어</li>
+                    <li>가맹상담</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>성북당소식</h4>
+                  <ul>
+                    <li>공지사항</li>
+                    <li>이벤트</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>줄서서 먹는 성북당 십원빵</h4>
+                <p>커피와 십원빵을 한번에 해결해 드립니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name"  onclick="javascript:location.href='./menu.html'">메뉴</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>성북당에 관해</h4>
+                  <ul>
+                    <li>성북당 십원빵</li>
+                    <li>찾아오시는길</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>메뉴</h4>
+                  <ul>
+                    <li>성북당 커피</li>
+                    <li>신메뉴</li>
+                    <li>전체메뉴</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>매장</h4>
+                  <ul>
+                    <li>매장 찾기</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>가맹안내</h4>
+                  <ul>
+                    <li>가맹안내</li>
+                    <li>인테리어</li>
+                    <li>가맹상담</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>성북당소식</h4>
+                  <ul>
+                    <li>공지사항</li>
+                    <li>이벤트</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>줄서서 먹는 성북당 십원빵</h4>
+                <p>커피와 십원빵을 한번에 해결해 드립니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name"  onclick="javascript:location.href='./store.html'">매장</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+               <li>
+                  <h4>성북당에 관해</h4>
+                  <ul>
+                    <li>성북당 십원빵</li>
+                    <li>찾아오시는길</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>메뉴</h4>
+                  <ul>
+                    <li>성북당 커피</li>
+                    <li>신메뉴</li>
+                    <li>전체메뉴</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>매장</h4>
+                  <ul>
+                    <li>매장 찾기</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>가맹안내</h4>
+                  <ul>
+                    <li>가맹안내</li>
+                    <li>인테리어</li>
+                    <li>가맹상담</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>성북당소식</h4>
+                  <ul>
+                    <li>공지사항</li>
+                    <li>이벤트</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>줄서서 먹는 성북당 십원빵</h4>
+                <p>커피와 십원빵을 한번에 해결해 드립니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name"   onclick="javascript:location.href='./franchisee.html'">가맹안내</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>성북당에 관해</h4>
+                  <ul>
+                    <li>성북당 십원빵</li>
+                    <li>찾아오시는길</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>메뉴</h4>
+                  <ul>
+                    <li>성북당 커피</li>
+                    <li>신메뉴</li>
+                    <li>전체메뉴</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>매장</h4>
+                  <ul>
+                    <li>매장 찾기</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>가맹안내</h4>
+                  <ul>
+                    <li>가맹안내</li>
+                    <li>인테리어</li>
+                    <li>가맹상담</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>성북당소식</h4>
+                  <ul>
+                    <li>공지사항</li>
+                    <li>이벤트</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>줄서서 먹는 성북당 십원빵</h4>
+                <p>커피와 십원빵을 한번에 해결해 드립니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">성북당소식</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>성북당에 관해</h4>
+                  <ul>
+                    <li>성북당 십원빵</li>
+                    <li>찾아오시는길</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>메뉴</h4>
+                  <ul>
+                    <li>성북당 커피</li>
+                    <li>신메뉴</li>
+                    <li>전체메뉴</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>매장</h4>
+                  <ul>
+                    <li>매장 찾기</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>가맹안내</h4>
+                  <ul>
+                    <li>가맹안내</li>
+                    <li>인테리어</li>
+                    <li>가맹상담</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>성북당소식</h4>
+                  <ul>
+                    <li>공지사항</li>
+                    <li>이벤트</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>줄서서 먹는 성북당 십원빵</h4>
+                <p>커피와 십원빵을 한번에 해결해 드립니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+       
+      </ul>
+
+    </div>
+
+    <!--BADGES-->
+    <div class="badges">
+      <div class="badge">
+        가맹문의 <br/>1533-1966
+      </div>
+      <div class="badge">
+        가맹상담
+      </div>
+    </div>
+  </header>
+
+
+  <section class="visuals">
+	
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+			<img src="./images/main_banner_0706_1.jpg" alt="">
+			<div class="text-gruop  fade-in">
+				<p class="text" data-animate="bottom">창업을 시작해 보세요.<br/>줄서서 먹는 화제의 십원빵<br/>성북당 십원빵</p>	
+				<a href="javascript:void(0)"  data-animate="bottom" class="btn btn--reverse">자세히 보기</a>
+			</div>
+		  </div>
+          <div class="swiper-slide">
+			<img src="./images/main_banner_0706_2.jpg" alt="">
+			<div class="text-gruop  fade-in">
+				<p class="text" data-animate="bottom">성북당의 다양하고 색다른<br/>메뉴를 만나보세요</p>	
+				<a href="javascript:void(0)"  data-animate="bottom" class="btn btn--reverse">자세히 보기</a>
+			</div>
+		  </div>
+		 <div>
+	  </div>
+    </div>
+</div>
+		
+      <div class="swiper-pagination"></div>
+  </section>
+
+
+  <!--NOTICE-->
+  <section class="notice">
+
+    <!--NOTICE LINE-->
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+
+        <div class="inner__left">
+          <h2>이벤트</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">십원빵 굿즈 이벤트 (상시 진행 합니다)</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">성북당 리뷰 이벤트 (상시 진행 합니다)</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <span class="material-icons">add_circle</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="coffee-introduction scroll-spy">
+  	<div class="back-bg"></div>
+  	<div class="parts">
+		<div class="part part1">
+			<div class="text-gruop back-to-position to-right delay-1">
+				<h4>메뉴안내</h4>
+				<a href="javascript:void(0);" class="btn btn--reverse">View</a>
+			</div>	
+		</div>
+		<div class="part part2">
+			<div class="text-gruop  back-to-position2 to-top delay-2">
+				<h4>성북당커피</h4>
+				<a href="javascript:void(0);" class="btn btn--reverse">View</a>
+			</div>	
+		</div>
+		<div class="part part3">
+			<div class="text-gruop back-to-position to-left delay-1">
+				<h4>가맹점개설안내</h4>
+				<a href="javascript:void(0);" class="btn btn--reverse">View</a>
+			</div>	
+		</div>
+	</div>
+	<div class="inner">
+		
+	</div>
+  </section>
+
+  <section class="coffee-menu scroll-spy">
+    <div class="cover"></div>
+	<div class="inner">
+		<img src="../images/gold10_menu02_menu_03_2.png" alt="" class="menu menu1 back-to-position  to-right delay-1">
+		<img src="../images/gold10_menu02_menu_28.png" alt="" class="menu menu2 back-to-position  to-right delay-1">
+		<img src="../images/gold10_menu02_menu_30.png" alt="" class="menu menu3 back-to-position  to-right delay-1">
+
+		<div class="text-gruop">
+			<div class="text">
+				<p class="back-to-position  to-left delay-0">Special Menu</p>
+				<p class="back-to-position  to-left delay-1">성북당만의 특별한 메뉴를 만나보세요.<br/>다양한 메뉴가 기다리고 있습니다.  </p>
+				<ul class="back-to-position  to-left delay-2">
+					<li><strong>無</strong>색소</li>
+					<li><strong>無</strong>방부제</li>
+				</ul>
+				<ul class="back-to-position  to-left delay-3">
+					<li><strong>無</strong>첨가제</li>
+					<li><strong>無</strong>물,설탕</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0)" class="btn btn--white back-to-position  to-left delay-3">자세히 보기</a>
+		</div>
+	</div>
+  </section>
+
+  <section class="variety-menu">
+		<div class="inner">
+			<div id="container">
+			  성북당의 핵심가치
+			  <div id=flip>
+				<div><div>좋은 재료, 좋은 먹거리</div></div>
+				<div><div>고객 집중</div></div>
+				<div><div>Easy & Simple</div></div>
+				<div><div>책임 있는 브랜드</div></div>
+			  </div>
+			  AweSoMe!
+			</div>
+		</div>
+  </section>	
+
+  <style>
+    .menu-info-list .inner .text{
+        display:inline-block;
+        position:relative;
+    }
+  </style>
+  <section class="menu-info-list scroll-spy">
+  	<div class="variable">
+			
+	</div>
+	<div class="inner">
+		<img src="../images/pc_story_img04_alln.png" alt="" class="back-to-position to-right delay-0">
+		<div class="text-group">
+			<div class="text">성북당만의 다양한 메뉴 구성</div>
+			<a href="javascript:void(0)" class="btn back-to-position2 to-top delay-2">바로 가기</a>
+		</div>
+	</div>
+  </section>
+
+  <!--YOUTUBE VIDEO-->
+  <section class="youtube">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+    <div class="inner">
+	  <div class="floating floating1" style="overflow:hidden;"></div>
+	  <div class="floating floating2" style="overflow:hidden;"></div>
+      
+
+    </div>
+  </section>
+
+
+  <!--SEASON PRODUCT-->
+  <section class="season-product scroll-spy">
+    <div class="inner">
+
+	  <div class="floating floating3" style="overflow:hidden;"></div>
+      <img src="./images/pc_menu_jc_img01n.png" alt="천혜향" class="product back-to-position to-right delay-0" />
+
+      <div class="text-group">
+	  	<div class="text back-to-position to-left delay-1">
+			<p class="text__title ">성북당의 특별한 음료</p>
+			<p class="text__subtitle">천혜향 주스 / 한라봉 주스</p>
+		</div>
+		<div class="description back-to-position to-left delay-2">
+			서랑이나 다른 첨가물 없이 제주산 감귤과 한라봉 / 천혜향만 착즙한 주스. <br/>과일 그자체로의 신선한 맛을 느낄 수 있습니다.
+		</div>
+        <div class="more back-to-position to-left delay-3">
+          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+ <section class="juicy-juice scroll-spy">
+	<div class="inner">
+		<img src="../images/pc_menu_jc_img03.png" alt="" class="juice-logo back-to-position to-right delay-1">
+		<div class="text-group ">
+			<div class="title back-to-position to-right delay-1">
+			100% 착즙! 100% 과즙
+			</div>
+			<div class="description back-to-position to-right delay-2">
+				증명된 원산지와 증명된 주스!
+			</div>
+			
+			<div class="more back-to-position to-right delay-2">
+			  <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
+			</div>
+		</div>
+	</div>
+ </section>	
+
+
+  <!--RESERVE COFFEE-->
+  <section class="reserve-coffee scroll-spy">
+    <div class="inner">
+      <img src="./images/gold10_c_gnb_logo.png" alt="" class="reserve-logo back-to-position to-right delay-0" />
+      <div class="text-group">
+        <div class="title  back-to-position to-right delay-1">성북당의 블렌딩</div>
+		<div class="description  back-to-position to-right delay-2">커피 본연의 맛과 향을 상승시키기위해 100% 콜롬비아 아라바카를 사용</div>
+        <div class="more back-to-position to-right delay-2">
+          <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
+        </div>
+      </div>
+      <img src="./images/gold10_menu02_menu_28.png" alt="" class="product product2 back-to-position to-left delay-1" />
+      <img src="./images/gold10_menu02_menu_30.png" alt="" class="product product3 back-to-position to-left delay-1" />
+
+    </div>
+  </section>
+
+  <section class="store-list scroll-spy">
+	<div class="inner">
+		<h4 class="back-to-position2 to-top delay-0">성북당의 매장</h4>
+		<div class="stores">
+			<div class="store">
+				<div class="store__box  back-to-position  to-right delay-1">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img01_n.jpg" alt="">
+				</div>
+				
+				<div class="text-gruop   back-to-position  to-right delay-1">
+					<div class="text">성북당 건대시티점</div>
+					<a href="https://www.youtube.com/watch?v=LqTX557xVrs" class="btn btn--reverse popup-youtube">인터뷰 보기</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position2  to-top delay-2">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img02.jpg" alt="">
+				</div>
+
+				<div class="text-gruop   back-to-position2  to-top delay-2">
+					<div class="text">성북당 한성대입구역점</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position  to-left delay-1">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img33.jpg" alt="">
+				</div>
+
+				<div class="text-gruop   back-to-position  to-left delay-1">
+					<div class="text">성북당 대전보건대점</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position  to-right delay-1">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img29.jpg" alt="">
+				</div>
+
+				<div class="text-gruop  back-to-position  to-right delay-1">
+					<div class="text">성북당 오션월드</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position2 to-top delay-2">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img37n.jpg" alt="">
+				</div>
+
+				<div class="text-gruop  back-to-position2  to-top delay-2">
+					<div class="text">성북당 연세대점</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position  to-left delay-1">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img03.jpg" alt="">
+				</div>
+
+				<div class="text-gruop   back-to-position  to-left delay-1">
+					<div class="text">성북당 함안휴게소(부산방향)</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
+				</div>
+			</div>
+		</div>
+		<div class="more">
+			<a href="javascript:void(0)" class="btn btn--white">More</a>
+		</div>
+	</div>
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+    <div class="inner">
+
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+      </ul>
+
+      <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
+        <a href="javascript:void(0)" class="btn btn--white">가맹문의</a>
+        <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
+      </div>
+
+      <div class="info">
+        <span>사업자등록번호 230-81-13124</span>
+        <span>(주)성북당 대표 이사 이영진</span>
+        <span>TEL : 1533-1966 / FAX : 1533-1966</span>
+        <span>개인정보 책임자 : 성북당</span>
+      </div>
+
+      <p class="copyright">
+        &copy; <span class="this-year"></span> SungBukDang Company. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!--TO TOP BUTTON-->
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- Magnific Popup core JS file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
+    });
+  </script>
+
+</body>
+</html>

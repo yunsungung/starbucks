@@ -2,7 +2,7 @@
 const badgeEl = document.querySelector('header .badges');
 
 window.addEventListener('scroll', _.throttle(function(){
-    if(window.scrollY > 500){
+    if(window.scrollY > 800){
       //  badgeEl.style.display = 'none';
       // gsap.to(요소 , 지속시간 , 옵션)
       gsap.to(badgeEl , .6, {
@@ -23,6 +23,10 @@ window.addEventListener('scroll', _.throttle(function(){
       }) ; 
     }
 } , 300));
+
+
+
+
 
 const toTopEl = document.querySelector('#to-top');
 toTopEl.addEventListener('click' , function(){
@@ -45,49 +49,28 @@ new Swiper('.notice-line .swiper-container' , {
     loop : true,
 });
 
-new Swiper('.promotion .swiper-container' , {
-    slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
-    spaceBetween : 10,
-    centeredSlides : true,
+new Swiper('.bread-menu .swiper-container' , {
+	autoplay : {
+		delay : 2500
+	},
     loop : true,
-    autoplay : {
-        delay : 1500
-    },
-    loop : true,
+});
+
+
+
+new Swiper('.visuals .swiper-container' , {
+	slidesPerView: 1, /* Set me! */  
+	loop : true,
+	autoplay : {
+		delay : 4500
+	},
     pagination : {
-        el : '.promotion .swiper-pagination',
+        el : '.visuals .swiper-pagination',
         clickable : true,
     },
-    navigation : {
-        prevEl : '.promotion .swiper-prev',
-        nextEl : '.promotion .swiper-next',
-    }
 });
 
-new Swiper('.awards .swiper-container', {
-    autoplay : true,
-    loop : true,
-    spaceBetween : 30,
-    slidesPerView : 5,
-    navigation : {
-        prevEl : '.awards .swiper-prev',
-        nextEl : '.awards .swiper-next',
-    }
-})
 
-const promotionEl = document.querySelector('.promotion');
-const promotionToggleBtn = document.querySelector('.toggle-promotion');
-let isHidePromotion = false;
-promotionToggleBtn.addEventListener('click', function(){
-    isHidePromotion = !isHidePromotion;
-    if(isHidePromotion){
-        // 숨김처리
-        promotionEl.classList.add('hide');
-    }else{
-        // 보임처리
-        promotionEl.classList.remove('hide');
-    }
-});
 
 // 범위 랜덤 함수(소수점 2자리까지)
 function random(min, max) {
@@ -113,6 +96,9 @@ function floatingObject(selector , delay , size){
 floatingObject('.floating1' , 1 , 15);
 floatingObject('.floating2' , .5 , 15);
 floatingObject('.floating3' , 1.5 , 20);
+floatingObject('.title__first' , .5 , 20);
+floatingObject('.title__last' , 1 , 30);
+floatingObject('.arrowDown' , 1 , 30);
 
 
 const spyEls = document.querySelectorAll('section.scroll-spy')
@@ -125,4 +111,32 @@ spyEls.forEach(function (spyEl) {
     })
     .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
     .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
-})
+});
+
+
+
+var btnMenu = document.querySelector(".btnMenu");
+var btnClose = document.querySelector(".btnClose");
+var menu = document.querySelector(".viewMenu");
+
+btnMenu.addEventListener("click", function (e) {
+  e = e || window.event;
+  e.preventDefault();
+  btnMenu.style.animation = "openMenu .7s";
+  setTimeout(() => {
+	menu.style.display = "flex";
+	setTimeout(() => {
+	  btnMenu.style.animation = "";
+	}, 300);
+  }, 400);
+});
+
+btnClose.addEventListener("click", function (e) {
+  e = e || window.event;
+  e.preventDefault();
+  menu.style.display = "none";
+  btnMenu.style.animation = "openMenu .7s reverse";
+  setTimeout(() => {
+	btnMenu.style.animation = "";
+  }, 700);
+});

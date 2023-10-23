@@ -1,0 +1,22 @@
+
+@-webkit-keyframes typing {
+    to {
+        width: 0;
+    }
+}
+
+@keyframes typing {
+    to {
+        width: 0;
+    }
+}
+@-webkit-keyframes caret {
+    50% {
+        color: transparent;
+    }
+}
+@keyframes caret {
+    50% {
+        color: transparent;
+    }
+}

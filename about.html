@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
   <link rel="stylesheet" href="./css/common.css" />
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/sub.css" />
   <link rel="stylesheet" href="./css/animation.css" />
 
   <!--GSAP & ScrollToPlugin-->
@@ -47,36 +47,30 @@
   <script defer src="./js/youtube.js"></script>
   <script defer src="./js/common.js"></script>
   <script defer src="./js/main.js"></script>
-  <script defer src="./js/scroll.js"></script>
-
   <style>
     @font-face {
-        font-family: 'KOTRAHOPE';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+        font-family: 'omyu_pretty';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
     }
-    .visuals .text-gruop .text{font-family: 'KOTRAHOPE', Courier, monospace; font-weight:500}
-    header{background-color: transparent; border-bottom:0; transition:.3s;}
-    header .main-menu .item .item__name{font-size:20px; color:#fff; font-weight:400;}
-    header .sub-menu ul.menu li a{color:#fff;}
-    header .sub-menu ul.menu li.line::before{background-color: #333;}
-    .visuals{margin-top:0;}
-    .notice .notice-line .bg-left,
-    .notice .notice-line .bg-right,
-    .notice .notice-line .inner__left
-    {
-        background-color:#f7b400;
+    body{
+        background:url("./images/white.webp");
+        background-repeat:repeat;
     }
-    .notice .notice-line .inner__left h2 ,
-    .notice .notice-line .inner__left .swiper-slide a
-    {color:#fff; }
-    .notice .notice-line .inner__left .notice-line__more .material-icons{color:#fff;}
-  </style> 
+    .menu-bg{
+        background:url("./images/gold10_menu02_title_br_img02.jpg");
+    }
+  </style>
 </head>
 <body>
 
+<script>
+	
+
+</script>
   <!--HEADER-->
+
   <header>
 	<div class="header">
         <aside class="viewMenu" style="display: none;">
@@ -418,354 +412,145 @@
      </ul>
 
    </div>
-
-    <!--BADGES-->
-    <div class="badges">
-      <div class="badge">
-        가맹문의 <br/>1533-1966
-      </div>
-      <div class="badge">
-        가맹상담
-      </div>
-    </div>
   </header>
 
-
-  <section class="visuals">
-	
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-			<img src="./images/main_banner_0706_1.jpg" alt="">
-			<div class="text-gruop  fade-in">
-				<p class="text" data-animate="bottom">창업을 시작해 보세요.<br/>줄서서 먹는 화제의 십원빵<br/>성북당 십원빵</p>	
-				<a href="javascript:void(0)"  data-animate="bottom" class="btn btn--reverse">자세히 보기</a>
-			</div>
-		  </div>
-          <div class="swiper-slide">
-			<img src="./images/main_banner_0706_2.jpg" alt="">
-			<div class="text-gruop  fade-in">
-				<p class="text" data-animate="bottom">성북당의 다양하고 색다른<br/>메뉴를 만나보세요</p>	
-				<a href="javascript:void(0)"  data-animate="bottom" class="btn btn--reverse">자세히 보기</a>
-			</div>
-            </div>
-        </div>
-    </div>
-		
-    <div class="swiper-pagination"></div>
-  </section>
+   <section class="menu-bg">
+        <h1 aria-label="Sarah Fossheim">
+            <span aria-hidden="true">
+            <span style="--index: .1s">성</span>
+            <span style="--index: .2s">북</span>
+            <span style="--index: .3s">당</span>
+            </span>
+            <span aria-hidden="true" class="spacing"  style="--index: 1.5"> </span>
+            <span aria-hidden="true">
+            <span style="--index: .8s">십</span>
+            <span style="--index: .8s">원</span>
+            <span style="--index: .8s">빵</span>
+            </span>
+        </h1>
+        <p  style="--index: .9s">특별한 디저트가 준비되어 있는 곳 , 성북당 십원빵입니다.</p>
+   </section>
 
    
-
-  <!--NOTICE-->
-  <section class="notice">
-
-    <!--NOTICE LINE-->
-    <div class="notice-line">
-      <div class="bg-left"></div>
-      <div class="bg-right"></div>
-      <div class="inner">
-
-        <div class="inner__left">
-          <h2>이벤트</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="javascript:void(0)">십원빵 굿즈 이벤트 (상시 진행 합니다)</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:void(0)">성북당 리뷰 이벤트 (상시 진행 합니다)</a>
-              </div>
-            </div>
-          </div>
-          <a href="javascript:void(0)" class="notice-line__more">
-            <span class="material-icons">add_circle</span>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section> 
-  
-
-<section class="coffee-introduction scroll-spy">
-    <div class="back-bg"></div>
-    <div class="parts">
-      <div class="part part1">
-          <div class="text-gruop back-to-position to-right delay-1">
-              <h4>메뉴안내</h4>
-              <a href="javascript:void(0);" class="btn btn--reverse">View</a>
-          </div>	
-      </div>
-      <div class="part part2">
-          <div class="text-gruop  back-to-position2 to-top delay-2">
-              <h4>성북당커피</h4>
-              <a href="javascript:void(0);" class="btn btn--reverse">View</a>
-          </div>	
-      </div>
-      <div class="part part3">
-          <div class="text-gruop back-to-position to-left delay-1">
-              <h4>가맹점개설안내</h4>
-              <a href="javascript:void(0);" class="btn btn--reverse">View</a>
-          </div>	
-      </div>
-  </div>
-</section>
-
-  <section class="bread-menu scroll-spy">
-    
-        <div class="images-group">
-            <div class="image-box text-gruop back-to-position to-right delay-1"></div>
-            <div class="text-group  text-gruop back-to-position to-left delay-1">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="sub-title">환상의 맛!</div>
-                            <div class="title">십원빵의 원조 성북당</div>
-                            <div class="descript">줄서서 먹는 십원빵과 100% 착즙 주스<br/>그 맛을 느껴보세요.</div>     
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sub-title">환상의 맛!</div>
-                            <div class="title">100% 착즙! 100! 과즙</div>
-                            <div class="descript">증명된 원산지와 증명된 주스<br/>신선한 주스의 맛을 느껴보세요.</div>     
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    
-  </section>
-  
-
-  <section class="coffee-menu scroll-spy">
-    <div class="cover"></div>
-	<div class="inner">
-		<img src="../images/gold10_menu02_menu_03_2.png" alt="" class="menu menu1 back-to-position  to-right delay-1">
-		<img src="../images/gold10_menu02_menu_28.png" alt="" class="menu menu2 back-to-position  to-right delay-1">
-		<img src="../images/gold10_menu02_menu_30.png" alt="" class="menu menu3 back-to-position  to-right delay-1">
-
-		<div class="text-gruop">
-			<div class="text">
-				<p class="back-to-position  to-left delay-0">Special Menu</p>
-				<p class="back-to-position  to-left delay-1">성북당만의 특별한 메뉴를 만나보세요.<br/>다양한 메뉴가 기다리고 있습니다.  </p>
-				<ul class="back-to-position  to-left delay-2">
-					<li><strong>無</strong>색소</li>
-					<li><strong>無</strong>방부제</li>
-				</ul>
-				<ul class="back-to-position  to-left delay-3">
-					<li><strong>無</strong>첨가제</li>
-					<li><strong>無</strong>물,설탕</li>
-				</ul>
-			</div>
-			<a href="javascript:void(0)" class="btn btn--white back-to-position  to-left delay-3">자세히 보기</a>
-		</div>
-	</div>
-  </section>
-
-  
-  <section class="bread-menu bread-menu2  scroll-spy">
-    
-    <div class="images-group">
-        <div class="text-group back-to-position  to-right delay-1">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="sub-title">환상의 맛!</div>
-                        <div class="title">십원빵의 원조 성북당</div>
-                        <div class="descript">줄서서 먹는 십원빵과 100% 착즙 주스<br/>그 맛을 느껴보세요.</div>     
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="sub-title">환상의 맛!</div>
-                        <div class="title">100% 착즙! 100! 과즙</div>
-                        <div class="descript">증명된 원산지와 증명된 주스<br/>신선한 주스의 맛을 느껴보세요.</div>     
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="image-box back-to-position  to-left delay-1"></div>
-    </div>
-
-</section>
-
-
-  <!--YOUTUBE VIDEO-->
-  <section class="youtube">
-    <div class="youtube__area">
-      <div id="player"></div>
-    </div>
-    <div class="youtube__cover"></div>
-    <div class="inner">
-      
-
-    </div>
-  </section>
-
-  <section class="variety-menu">
-		<div class="inner">
-			<div id="container">
-			  성북당의 핵심가치
-			  <div id=flip>
-				<div><div>좋은 재료, 좋은 먹거리</div></div>
-				<div><div>고객 집중</div></div>
-				<div><div>Easy & Simple</div></div>
-				<div><div>책임 있는 브랜드</div></div>
-			  </div>
-			  AweSoMe!
-			</div>
-		</div>
-  </section>	
-
   <style>
-    .menu-info-list .inner .text{
+    .about-sungbukdang .inner h4{
         display:inline-block;
         position:relative;
     }
+    
   </style>
-  <section class="menu-info-list scroll-spy">
-  	<div class="variable">
-			
-	</div>
-	<div class="inner">
-		<img src="../images/pc_story_img04_alln.png" alt="" class="back-to-position to-right delay-0">
-		<div class="text-group">
-			<div class="text">성북당만의 다양한 메뉴 구성</div>
-			<a href="javascript:void(0)" class="btn back-to-position2 to-top delay-2">바로 가기</a>
-		</div>
-	</div>
-  </section>
 
-
-
-  <!--SEASON PRODUCT-->
-  <section class="season-product scroll-spy">
+   <section class="about-sungbukdang scroll-spy">
     <div class="inner">
-
-      <img src="./images/pc_menu_jc_img01n.png" alt="천혜향" class="product back-to-position to-right delay-0" />
-
-      <div class="text-group">
-	  	<div class="text back-to-position to-left delay-1">
-			<p class="text__title ">성북당의 특별한 음료</p>
-			<p class="text__subtitle">천혜향 주스 / 한라봉 주스</p>
-		</div>
-		<div class="description back-to-position to-left delay-2">
-			서랑이나 다른 첨가물 없이 제주산 감귤과 한라봉 / 천혜향만 착즙한 주스. <br/>과일 그자체로의 신선한 맛을 느낄 수 있습니다.
-		</div>
-        <div class="more back-to-position to-left delay-3">
-          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        <h2 class="back-to-position2 to-top delay-0">성북당 십원빵</h2>
+        <div class="text-group">
+            <div class="text-group-left">
+                <h4 class="">경주에서 시작된 십원빵</h4>
+                <p class="back-to-position to-right delay-0">2019년, (주)마이원 이영진 대표는 세계문화유산등축제를 유치하는 과정에서 십원빵의 영감을 얻습니다.
+                    초기에는 경주의 상징인 탑을 바탕으로 ‘다보탑빵’ 작명을 고려했지만 어감이 익숙하지 않아 고민하다
+                    십원 주화에 각인된 다보탑에서 착안해 친근한 ‘십원빵’으로 태어납니다.</p>
+                <p class="back-to-position to-right delay-1">경주를 찾은 수많은 관광객들을 사로잡은 십원빵의 인기가 많아지자, 유사한
+                    상호명의 저품질 모방 제품들이 생겨 시장에 혼란을 주었습니다. 이에 ㈜마이
+                    원은 미투 브랜드와 확실한 차별화를 하고자 성북동에 위치한 본사를 연결해
+                    New CI를 만들고 “성북당 십원빵”으로 원조 브랜드를 재정비하였습니다.</p>
+                <p class="back-to-position to-right delay-2">최상의 원료 선별 후 매장으로 공급해 현장에서 직접 만들어 판매하는 방식을
+                    고수합니다. 드시는 분들의 건강까지 고려해 함량을 더욱 높인 보릿가루와
+                    자연산 치즈 및 크림치즈 소스를 통해 남녀노소 모두가 즐길 수 있도록
+                    꾸준한 노력을 하고 있습니다.</p>
+                <p class="back-to-position to-right delay-3">이러한 진심과 열정이 고객에게 닿아 브랜드는 급성장 중으로 SNS와 블로그
+                    등 온라인을 넘어 TV 방송에도 출연했으며 전국 휴게소 내 십원빵으로 단독
+                    입점 및 바다 건너 일본까지 매장이 운영되고 있습니다.</p>
+                <p class="back-to-position to-right delay-3">“성북당”은 한결 같은 마음으로
+                    정직하게 만들겠습니다.</p>
+                <img src="./images/gold10_menu01_img02_01_sigh.png" alt="" class="back-to-position to-right delay-3">
+            </div>
+            <div class="text-group-right">
+                <img src="./images/gold10_menu01_img02_01n.png" alt=""  class="back-to-position to-left delay-2">
+            </div>
         </div>
-      </div>
-
     </div>
-  </section>
+   </section>
 
- <section class="juicy-juice scroll-spy">
-	<div class="inner">
-		<img src="../images/pc_menu_jc_img03.png" alt="" class="juice-logo back-to-position to-right delay-1">
-		<div class="text-group ">
-			<div class="title back-to-position to-right delay-1">
-			100% 착즙! 100% 과즙
-			</div>
-			<div class="description back-to-position to-right delay-2">
-				증명된 원산지와 증명된 주스!
-			</div>
-			
-			<div class="more back-to-position to-right delay-2">
-			  <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
-			</div>
-		</div>
-	</div>
- </section>	
-
-
-  <!--RESERVE COFFEE-->
-  <section class="reserve-coffee scroll-spy">
+   <section class="core-value scroll-spy">
     <div class="inner">
-      <img src="./images/gold10_c_gnb_logo.png" alt="" class="reserve-logo back-to-position to-right delay-0" />
-      <div class="text-group">
-        <div class="title  back-to-position to-right delay-1">성북당의 블렌딩</div>
-		<div class="description  back-to-position to-right delay-2">커피 본연의 맛과 향을 상승시키기위해 100% 콜롬비아 아라바카를 사용</div>
-        <div class="more back-to-position to-right delay-2">
-          <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
+        <h2 class="back-to-position2 to-top delay-0">핵심가치</h2>
+        <div class="values">
+            <div class="value">
+                <div class="material-icons back-to-position to-right delay-1">storefront</div>
+                <div class="value-group">
+                    
+                    <div class="value__title back-to-position to-right delay-2">좋은 재료,좋은 먹거리</div>
+                    <div class="value__description back-to-position to-right delay-3">먹을 수 있는 좋은 재료로<br/>정직한 먹거리를 제공, <br/>소신있는 브랜드</div>
+                </div>
+            </div>
+            <div class="value">
+                <div class="material-icons back-to-position to-left delay-1">free_breakfast</div>
+                <div class="value-group">
+                    <div class="value__title back-to-position to-left delay-2">고객집중</div>
+                    <div class="value__description back-to-position to-left delay-3">고객의 건강과 맛에 대한 믿음, <br/>신뢰 받는 브랜드</div>
+                </div>
+
+            </div>
         </div>
-      </div>
-      <img src="./images/gold10_menu02_menu_28.png" alt="" class="product product2 back-to-position to-left delay-1" />
-      <img src="./images/gold10_menu02_menu_30.png" alt="" class="product product3 back-to-position to-left delay-1" />
-
+        <div class="values">
+            <div class="value">
+                <div class="material-icons back-to-position to-right delay-1">breakfast_dining </div>
+                <div class="value-group">
+                    <div class="value__title back-to-position to-right delay-2">Easy&Simple</div>
+                    <div class="value__description back-to-position to-right delay-3">누구나 쉽고 단순하게 접근, <br/>가성비 좋은 브랜드</div>
+                </div>
+            </div>
+            <div class="value">
+                <div class="material-icons back-to-position to-left delay-1">bakery_dining</div>
+                <div class="value-group">
+                    <div class="value__title back-to-position to-left delay-2">매출과 수익</div>
+                    <div class="value__description back-to-position to-left delay-3">가맹점주의 매출과 수익 증대, <br/>책임 있는 브랜드</div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+   </section>
 
-  <section class="store-list scroll-spy">
-	<div class="inner">
-		<h4 class="back-to-position2 to-top delay-0">성북당의 매장</h4>
-		<div class="stores">
-			<div class="store">
-				<div class="store__box  back-to-position  to-right delay-1">
-					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img01_n.jpg" alt="">
-				</div>
-				
-				<div class="text-gruop   back-to-position  to-right delay-1">
-					<div class="text">성북당 건대시티점</div>
-					<a href="https://www.youtube.com/watch?v=LqTX557xVrs" class="btn btn--reverse popup-youtube">인터뷰 보기</a>
-				</div>
-			</div>
-			<div class="store">
-				<div class="store__box  back-to-position2  to-top delay-2">
-					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img02.jpg" alt="">
-				</div>
+   <section class="varit-menu  scroll-spy">
+    <div class="inner">
+        <h2 class="back-to-position2 to-top delay-0">성북당의 다양한<span class="mobile"></span> 메뉴 구성</h2>
+        <div class="sub-title back-to-position2 to-top delay-1">
+            성북당은 <span>새롭고 양질의 메뉴</span>를 제공하려 노력하고있습니다.<br/> 
+            성북당의 다양한 메뉴들을 만나보세요
+        </div>
+        <div class="text-group">
+            <img src="./images/pc_story_img04_alln.png" alt=""  class="back-to-position2 to-top delay-2">
+            <div class="more back-to-position2 to-top delay-3">
+                <a href="javascript:void(0)" class="btn">더 보기</a>
+            </div>
 
-				<div class="text-gruop   back-to-position2  to-top delay-2">
-					<div class="text">성북당 한성대입구역점</div>
-					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
-				</div>
-			</div>
-			<div class="store">
-				<div class="store__box  back-to-position  to-left delay-1">
-					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img33.jpg" alt="">
-				</div>
+        </div>
+    </div>
+   </section>
 
-				<div class="text-gruop   back-to-position  to-left delay-1">
-					<div class="text">성북당 대전보건대점</div>
-					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
-				</div>
-			</div>
-			<div class="store">
-				<div class="store__box  back-to-position  to-right delay-1">
-					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img29.jpg" alt="">
-				</div>
+   <section class="medea-introduction scroll-spy">
+    <div class="inner">
+        <h2 class="back-to-position2 to-top delay-0">언론에 소개된 성북당 십원빵</h2>
+        <div class="media-list">
+            <img src="./images/pc_fr_img08_04.jpg" alt="" class="media-img media-img1  back-to-position3 to-skew-right delay-2">
+            <img src="./images/pc_fr_img08_05.jpg" alt="" class="media-img media-img2  back-to-position3 to-skew-left delay-2">   
+        </div>
+    </div>
+   </section>
 
-				<div class="text-gruop  back-to-position  to-right delay-1">
-					<div class="text">성북당 오션월드</div>
-					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
-				</div>
-			</div>
-			<div class="store">
-				<div class="store__box  back-to-position2 to-top delay-2">
-					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img37n.jpg" alt="">
-				</div>
-
-				<div class="text-gruop  back-to-position2  to-top delay-2">
-					<div class="text">성북당 연세대점</div>
-					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
-				</div>
-			</div>
-			<div class="store">
-				<div class="store__box  back-to-position  to-left delay-1">
-					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img03.jpg" alt="">
-				</div>
-
-				<div class="text-gruop   back-to-position  to-left delay-1">
-					<div class="text">성북당 함안휴게소(부산방향)</div>
-					<a href="javascript:void(0);" class="btn  btn--reverse">인터뷰 보기</a>
-				</div>
-			</div>
-		</div>
-		<div class="more">
-			<a href="javascript:void(0)" class="btn btn--white">More</a>
-		</div>
-	</div>
-  </section>
+   <section class="medea-tv-introduction scroll-spy">
+    <div class="inner">
+        <h2 class="back-to-position2 to-top delay-0">성북당 십원빵 TV 출연과 수많은 블로그 인증!</h2>
+        <div class="sub-title back-to-position2 to-top delay-1">
+            성북당 십원빵의 인기는 급성장하여 <span>블로그인증이나 TV방송</span>까지 출연하였고<br/>
+             이미 전국에 수 많은 휴게소에서도 꼭 먹어봐야 할 대표 간식으로 자리잡게 되었습니다.
+        </div>
+        <div class="media-list">
+            <img src="./images/pc_fr_img09n.png" alt="" class="media-img media-img1  back-to-position to-right delay-2">
+            <img src="./images/pc_bl_img11.jpg" alt="" class="media-img media-img2  back-to-position to-left delay-2">   
+        </div>
+    </div>
+   </section>
 
 
   <!--FOOTER-->
@@ -805,26 +590,6 @@
     <div class="material-icons">arrow_upward</div>
   </div>
 
-  <!-- Magnific Popup core CSS file -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-
-  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-  <!-- Magnific Popup core JS file -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script>
-    $(document).ready(function() {
-        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-            disableOn: 700,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false
-        });
-    });
-  </script>
 
 </body>
 </html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sung buk dang</title>
+
+  <!--Open Graph-->
+  <!--http://ogp.me/-->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sung buk dang" />
+  <meta property="og:title" content="Sung buk dang" />
+  <meta property="og:url" content="https://sungbukdang.co.kr" />
+
+  <!--Twitter Card-->
+  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Sung buk dang" />
+  <meta property="twitter:title" content="Sung buk dang" />
+  <meta property="twitter:url" content="https://sungbukdang.co.kr" />
+
+  <!--파비콘-->
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="./css/common.css?v=1" />
+  <link rel="stylesheet" href="./css/main.css?v=1" />
+
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+  <script defer src="./js/youtube.js"></script>
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/scroll.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    body{
+        font-family: 'Roboto Condensed', Courier, monospace;
+        font-weight:100;
+    }
+    header{background-color: transparent; border-bottom:0;}
+    header .main-menu .item .item__name{font-size:20px; color:#fff; font-weight:400;}
+    .visuals{margin-top:0;}
+    
+    header .sub-menu ul.menu li a{color:#fff;}
+    header .sub-menu ul.menu li.line::before{background-color: #333;}
+
+    .visuals .text-gruop .text {
+        font-family: 'Great Vibes', Courier, monospace;
+        font-size: 60px;
+        color: #fff;
+        font-weight: 100;
+        letter-spacing:0;
+    }
+    .coffee-introduction .parts .part .text-gruop{width:230px}
+    .coffee-menu .inner .text-gruop{width:500px}
+    .coffee-menu .inner .text-gruop .text ul li{width:226px;}
+    .season-product .text-group{right:0 ; width:500px;}
+    header .badges .badge{text-align:center;}
+    footer .btn-group .btn{width:170px}
+    .reserve-coffee .text-group .description{width:500px;}
+  </style> 
+</head>
+<body>
+
+  <!--HEADER-->
+  <header>
+	<div class="header">
+		 <aside class="viewMenu" style="display: none;">
+			<a href="#" class="btnClose"><span class="material-icons">close</span></a>
+			<nav>
+				<span>
+					Menu
+				</span>
+				<ul>
+					<li><a href="./about.html">Sungbukdang <span>complete</span></a></li>
+					<li><a href="./menu.html">Menu <span>complete</span></a></li>
+					<li><a href="./store.html">Store <span>complete</span></a></li>
+					<li><a href="./franchisee.html">Information on affiliation  <span>complete</span></a></li>
+					<li><a href="">Sungbukdang News</a></li>
+				</ul>
+			</nav>
+			<footer class="footer">
+				<span>Social</span>
+				<ul>
+					<li>
+						<a href="https://www.instagram.com/pantas_paladar/" rel="nofollow, noreferrer" target="_blank">
+							<figure>
+								<img src="http://sungbukdang.com/theme/basic/images/gold10_c_gnb_snsicon01.svg" title="">
+								<figcaption>
+									Instagram
+									<span>@sungbukdang</span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="https://web.whatsapp.com/" rel="nofollow, noreferrer" target="_blank">
+							<figure>
+								<img src="http://sungbukdang.com/theme/basic/images/gold10_c_gnb_snsicon02.svg" title="">
+								<figcaption>
+									Facebook
+									<span>Sungbukdang</span>
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		 </aside>
+		 <a href="#" class="btnMenu" style="">
+			<span class="material-icons">menu</span>
+		</a>
+	</div>
+    <div class="inner">
+
+      <a href="/" class="logo">
+        <img src="./images/gold10_c_gnb_logo.png" alt="STARBUCKS" />
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <!-- <li>
+            <a href="/signin">Sign In</a>
+          </li> -->
+          <li>
+            <a href="javascript:void(0)">Sungbukdang SNS</a>
+          </li>
+          <!-- <li>
+            <a href="javascript:void(0)">Customer Service & Ideas</a>
+          </li> -->
+          <li>
+            <a href="javascript:void(0)">Store</a>
+          </li>
+          <li>
+            <a href="./enindex.html">En</a>
+          </li>
+          <li>
+            <a href="./index.html">Ko</a>
+          </li>
+        </ul>
+        <!-- <div class="search">
+          <input type="text" />
+          <span class="material-icons">search</span>
+        </div> -->
+      </div>
+
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name" onclick="javascript:location.href='./about.html'">Sungbukdang</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>About Sungbukdang</h4>
+                  <ul>
+                    <li>Sungbukdang Sibwon Bread</li>
+                    <li>Contact Us</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Menu</h4>
+                  <ul>
+                    <li>Sungbukdang Coffee</li>
+                    <li>New Menu</li>
+                    <li>All Menu</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Store</h4>
+                  <ul>
+                    <li>Find Store</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Information on affiliation</h4>
+                  <ul>
+                    <li>Information on affiliation</li>
+                    <li>Interior</li>
+                    <li>affiliate counseling</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Sungbukdang News</h4>
+                  <ul>
+                    <li>Notice</li>
+                    <li>Event</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Sungbukdang Sibwon Bread in line</h4>
+                <p>We'll give you coffee and ten won bread at once.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name"  onclick="javascript:location.href='./menu.html'">Menu</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>About Sungbukdang</h4>
+                  <ul>
+                    <li>Sungbukdang Sibwon Bread</li>
+                    <li>Contact Us</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Menu</h4>
+                  <ul>
+                    <li>Sungbukdang Coffee</li>
+                    <li>New Menu</li>
+                    <li>All Menu</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Store</h4>
+                  <ul>
+                    <li>Find Store</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Information on affiliation</h4>
+                  <ul>
+                    <li>Information on affiliation</li>
+                    <li>Interior</li>
+                    <li>affiliate counseling</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Sungbukdang News</h4>
+                  <ul>
+                    <li>Notice</li>
+                    <li>Event</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>Sungbukdang Sibwon Bread in line</h4>
+                <p>We'll give you coffee and ten won bread at once.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name"  onclick="javascript:location.href='./store.html'">Store</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+                <ul class="inner">
+                    <li>
+                      <h4>About Sungbukdang</h4>
+                      <ul>
+                        <li>Sungbukdang Sibwon Bread</li>
+                        <li>Contact Us</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Menu</h4>
+                      <ul>
+                        <li>Sungbukdang Coffee</li>
+                        <li>New Menu</li>
+                        <li>All Menu</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Store</h4>
+                      <ul>
+                        <li>Find Store</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Information on affiliation</h4>
+                      <ul>
+                        <li>Information on affiliation</li>
+                        <li>Interior</li>
+                        <li>affiliate counseling</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Sungbukdang News</h4>
+                      <ul>
+                        <li>Notice</li>
+                        <li>Event</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="contents__texture">
+                  <div class="inner">
+                    <h4>Sungbukdang Sibwon Bread in line</h4>
+                    <p>We'll give you coffee and ten won bread at once.</p>
+                  </div>
+                </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">Information on affiliation</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+                <ul class="inner">
+                    <li>
+                      <h4>About Sungbukdang</h4>
+                      <ul>
+                        <li>Sungbukdang Sibwon Bread</li>
+                        <li>Contact Us</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Menu</h4>
+                      <ul>
+                        <li>Sungbukdang Coffee</li>
+                        <li>New Menu</li>
+                        <li>All Menu</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Store</h4>
+                      <ul>
+                        <li>Find Store</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Information on affiliation</h4>
+                      <ul>
+                        <li>Information on affiliation</li>
+                        <li>Interior</li>
+                        <li>affiliate counseling</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Sungbukdang News</h4>
+                      <ul>
+                        <li>Notice</li>
+                        <li>Event</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="contents__texture">
+                  <div class="inner">
+                    <h4>Sungbukdang Sibwon Bread in line</h4>
+                    <p>We'll give you coffee and ten won bread at once.</p>
+                  </div>
+                </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">News</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+                <ul class="inner">
+                    <li>
+                      <h4>About Sungbukdang</h4>
+                      <ul>
+                        <li>Sungbukdang Sibwon Bread</li>
+                        <li>Contact Us</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Menu</h4>
+                      <ul>
+                        <li>Sungbukdang Coffee</li>
+                        <li>New Menu</li>
+                        <li>All Menu</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Store</h4>
+                      <ul>
+                        <li>Find Store</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Information on affiliation</h4>
+                      <ul>
+                        <li>Information on affiliation</li>
+                        <li>Interior</li>
+                        <li>affiliate counseling</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>Sungbukdang News</h4>
+                      <ul>
+                        <li>Notice</li>
+                        <li>Event</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="contents__texture">
+                  <div class="inner">
+                    <h4>Sungbukdang Sibwon Bread in line</h4>
+                    <p>We'll give you coffee and ten won bread at once.</p>
+                  </div>
+                </div>
+          </div>
+        </li>
+       
+      </ul>
+
+    </div>
+
+    <!--BADGES-->
+    <div class="badges">
+      <div class="badge">
+        Inquiries about affiliation <br/>1533-1966
+      </div>
+      <div class="badge">
+        affiliate counseling
+      </div>
+    </div>
+  </header>
+
+
+  <section class="visuals">
+	
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+			<img src="./images/main_banner_0706_1.jpg" alt="">
+			<div class="text-gruop  fade-in">
+				<p class="text" data-animate="bottom">Start your own business.<br/>10 wonbreads that are popular to eat in line<br/>Sungbukdang</p>	
+				<a href="javascript:void(0)"  data-animate="bottom" class="btn btn--reverse">Read more</a>
+			</div>
+		  </div>
+          <div class="swiper-slide">
+			<img src="./images/main_banner_0706_2.jpg" alt="">
+			<div class="text-gruop  fade-in">
+				<p class="text" data-animate="bottom">Meet Sungbukdang's<br/>various and different menus</p>	
+				<a href="javascript:void(0)"  data-animate="bottom" class="btn btn--reverse">Read more</a>
+			</div>
+		  </div>
+		 <div>
+	  </div>
+    </div>
+</div>
+		
+      <div class="swiper-pagination"></div>
+  </section>
+
+
+  <!--NOTICE-->
+  <section class="notice">
+
+    <!--NOTICE LINE-->
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+
+        <div class="inner__left">
+          <h2>Event</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">10 won bread goods event (will be held at all times)</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">Sungbukdang review event (will be held at all times)</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <span class="material-icons">add_circle</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="coffee-introduction scroll-spy">
+  	<div class="back-bg"></div>
+  	<div class="parts">
+		<div class="part part1">
+			<div class="text-gruop back-to-position to-right delay-1">
+				<h4>Menu information</h4>
+				<a href="javascript:void(0);" class="btn btn--reverse">View</a>
+			</div>	
+		</div>
+		<div class="part part2">
+			<div class="text-gruop  back-to-position2 to-top delay-2">
+				<h4>Sungbukdang Coffee</h4>
+				<a href="javascript:void(0);" class="btn btn--reverse">View</a>
+			</div>	
+		</div>
+		<div class="part part3">
+			<div class="text-gruop back-to-position to-left delay-1">
+				<h4>Information</h4>
+				<a href="javascript:void(0);" class="btn btn--reverse">View</a>
+			</div>	
+		</div>
+	</div>
+	<div class="inner">
+		
+	</div>
+  </section>
+
+  <section class="coffee-menu scroll-spy">
+    <div class="cover"></div>
+	<div class="inner">
+		<img src="../images/gold10_menu02_menu_03_2.png" alt="" class="menu menu1 back-to-position  to-right delay-1">
+		<img src="../images/gold10_menu02_menu_28.png" alt="" class="menu menu2 back-to-position  to-right delay-1">
+		<img src="../images/gold10_menu02_menu_30.png" alt="" class="menu menu3 back-to-position  to-right delay-1">
+
+		<div class="text-gruop">
+			<div class="text">
+				<p class="back-to-position  to-left delay-1">Special Menu</p>
+				<p class="back-to-position  to-left delay-2">Meet Sungbukdang's special menu.<br/>Various menus are waiting.  </p>
+				<ul class="back-to-position  to-left delay-3">
+					<li>non-pigmentation</li>
+					<li>Preservatives-free</li>
+				</ul>
+				<ul class="back-to-position  to-left delay-2">
+					<li>a non-additive</li>
+					<li>No Water, sugar</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0)" class="btn btn--white back-to-position  to-left delay-0">Read More</a>
+		</div>
+	</div>
+  </section>
+
+  <section class="variety-menu">
+		<div class="inner">
+			<div id="container">
+                The Core Values of Sungbukdang
+			  <div id=flip>
+				<div><div>Good ingredients, good food</div></div>
+				<div><div>Customer Focus</div></div>
+				<div><div>Easy & Simple</div></div>
+				<div><div>Responsible brand</div></div>
+			  </div>
+			  AweSoMe!
+			</div>
+		</div>
+  </section>	
+
+  <section class="menu-info-list scroll-spy">
+  	<div class="variable">
+			
+	</div>
+	<div class="inner">
+		<img src="../images/pc_story_img04_alln.png" alt="" class="back-to-position2 to-top delay-2">
+		<div class="text-group">
+			<div class="text">Sungbukdang's Various Menu Composition</div>
+			<a href="javascript:void(0)" class="btn">Shortcut</a>
+		</div>
+	</div>
+
+  </section>
+
+  <!--YOUTUBE VIDEO-->
+  <section class="youtube">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+    <div class="inner">
+	  <div class="floating floating1" style="overflow:hidden;"></div>
+	  <div class="floating floating2" style="overflow:hidden;"></div>
+      
+
+    </div>
+  </section>
+
+
+  <!--SEASON PRODUCT-->
+  <section class="season-product scroll-spy">
+    <div class="inner">
+
+	  <div class="floating floating3" style="overflow:hidden;"></div>
+      <img src="./images/pc_menu_jc_img01n.png" alt="천혜향" class="product back-to-position to-right delay-0" />
+
+      <div class="text-group">
+	  	<div class="text back-to-position to-left delay-1">
+			<p class="text__title ">Sungbukdang's special drink</p>
+			<p class="text__subtitle">Cheonhyehyang Juice / Hallabong Juice</p>
+		</div>
+		<div class="description back-to-position to-left delay-2">
+			Jeju citrus and Hallabong without any other additives/juice juice with only without seorang or other additives. <br/>You can feel the fresh taste of the fruit itself.
+		</div>
+        <div class="more back-to-position to-left delay-3">
+          <a href="javascript:void(0)" class="btn">Read more</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+ <section class="juicy-juice scroll-spy">
+	<div class="inner">
+		<img src="../images/pc_menu_jc_img03.png" alt="" class="juice-logo back-to-position to-right delay-1">
+		<div class="text-group ">
+			<div class="title back-to-position to-right delay-1">
+                100% juice! 100% juice
+			</div>
+			<div class="description back-to-position to-right delay-2">
+				Proven country of origin and proven juice!
+			</div>
+			
+			<div class="more back-to-position to-right delay-2">
+			  <a href="javascript:void(0)" class="btn btn--gold">Read more</a>
+			</div>
+		</div>
+	</div>
+ </section>	
+
+
+  <!--RESERVE COFFEE-->
+  <section class="reserve-coffee scroll-spy">
+    <div class="inner">
+      <img src="./images/gold10_c_gnb_logo.png" alt="" class="reserve-logo back-to-position to-right delay-0" />
+      <div class="text-group">
+        <div class="title  back-to-position to-right delay-1">The blending of Sungbukdang</div>
+		<div class="description  back-to-position to-right delay-2">Use 100% Colombian arabaca to increase the original taste and aroma of coffee</div>
+        <div class="more back-to-position to-right delay-2">
+          <a href="javascript:void(0)" class="btn btn--gold">Read more</a>
+        </div>
+      </div>
+      <img src="./images/gold10_menu02_menu_28.png" alt="" class="product product2 back-to-position to-left delay-1" />
+      <img src="./images/gold10_menu02_menu_30.png" alt="" class="product product3 back-to-position to-left delay-1" />
+
+    </div>
+  </section>
+
+  <section class="store-list scroll-spy">
+	<div class="inner">
+		<h4>Sungbukdang's Store</h4>
+		<div class="stores">
+			<div class="store">
+				<div class="store__box  back-to-position  to-right delay-1">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img01_n.jpg" alt="">
+				</div>
+				
+				<div class="text-gruop   back-to-position  to-right delay-1">
+					<div class="text">Konkuk University City</div>
+					<a href="javascript:void(0);" class="btn btn--reverse">Interview</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position2  to-top delay-2">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img02.jpg" alt="">
+				</div>
+
+				<div class="text-gruop   back-to-position2  to-top delay-2">
+					<div class="text">Hansung University Station</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">Interview</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position  to-left delay-1">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img33.jpg" alt="">
+				</div>
+
+				<div class="text-gruop   back-to-position  to-left delay-1">
+					<div class="text">Daejeon Health University</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">Interview</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position  to-right delay-1">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img29.jpg" alt="">
+				</div>
+
+				<div class="text-gruop  back-to-position  to-right delay-1">
+					<div class="text">Ocean World</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">Interview</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position2 to-top delay-2">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img37n.jpg" alt="">
+				</div>
+
+				<div class="text-gruop  back-to-position2  to-top delay-2">
+					<div class="text">Yonsei University branch</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">Interview</a>
+				</div>
+			</div>
+			<div class="store">
+				<div class="store__box  back-to-position  to-left delay-1">
+					<img src="http://sungbukdang.com/theme/basic/images/store/gold10_menu03_store_img03.jpg" alt="">
+				</div>
+
+				<div class="text-gruop   back-to-position  to-left delay-1">
+					<div class="text">Haman Rest Area</div>
+					<a href="javascript:void(0);" class="btn  btn--reverse">Interview</a>
+				</div>
+			</div>
+		</div>
+		<div class="more">
+			<a href="javascript:void(0)" class="btn btn--white">More</a>
+		</div>
+	</div>
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+    <div class="inner">
+
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">Personal information Processing Policy</a></li>
+        <li><a href="javascript:void(0)">Terms and conditions of use on the website</a></li>
+        <li><a href="javascript:void(0)">Location Information Terms and Conditions</a></li>
+        <li><a href="javascript:void(0)">Ethical Management Hotline</a></li>
+      </ul>
+
+      <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--white">Contact Us</a>
+        <a href="javascript:void(0)" class="btn btn--white">Inquiries about affiliation</a>
+        <a href="javascript:void(0)" class="btn btn--white">Site Map</a>
+      </div>
+
+      <div class="info">
+        <span>Business registration number 230-81-13124</span>
+        <span>(주)성북당 대표 이사 이영진</span>
+        <span>TEL : 1533-1966 / FAX : 1533-1966</span>
+        <span>a person in charge of personal information : Sungbukdang</span>
+      </div>
+
+      <p class="copyright">
+        &copy; <span class="this-year"></span> SungBukDang Company. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!--TO TOP BUTTON-->
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-const searchEl = document.querySelector('.search');
+/*const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
 
 searchEl.addEventListener('click' , function (){
@@ -13,7 +13,7 @@ searchInputEl.addEventListener('focus' , function(){
 searchInputEl.addEventListener('blur' , function(){
     searchEl.classList.remove('focused');
     searchInputEl.setAttribute('placeholder','');
-});
+});*/
 
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
